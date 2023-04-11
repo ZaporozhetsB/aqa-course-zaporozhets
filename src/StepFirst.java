@@ -41,38 +41,38 @@ public class StepFirst {
         /*Task 1: create a program, that will scan int value from console and print first
          message if value less than 10, second message if larger, than 10 and if it is equal to 0 - third message.
          */
-//        Scanner scanner = new Scanner(System.in);
-//        int number = scanner.nextInt();
-//        if (number < 10) {
-//            System.out.println("Your input less 10");
-//        } else if (number > 10) {
-//            System.out.println("Your input more 10");
-//        } else if (number == 0) {
-//            System.out.println("Your input equal 0"); // need to be first condition
-//        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input int number: ");
+        int number = scanner.nextInt();
+        if (number < 10) {
+            System.out.println("Your input less 10");
+        } else if (number > 10) {
+            System.out.println("Your input more 10");
+        } else if (number == 0) {
+            System.out.println("Your input equal 0"); // need to be first condition
+        }
 
         /*Task 2: create a program, that will scan double value from console and
         if value is odd - first message printing to console, if even - second message printing to console.
          */
-
-//        int scanDouble = scanner.nextInt() * 2;
-//        if (scanDouble % 2 != 0) {
-//            System.out.println("Your value is odd");
-//        } else
-//            System.out.println("Your value is even");
-//        }
-
+        System.out.print("Input double number: ");
+        double scanDouble = scanner.nextDouble() * 2;
+        if (scanDouble % 2 != 0) {
+            System.out.println("Your value is odd");
+        } else {
+            System.out.println("Your value is even");
+        }
         /* create a program, that will scan float value from console and if this value
         is divisible without remainder by 2 and larger than 10 or if value equals 15 - first message is printing
          to the console, if not - second message is printing to console.
          */
-        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input float number: ");
         float scanFloat = scanner.nextFloat();
         if (scanFloat % 2 == 0) {
             if (scanFloat > 10) {
                 if (scanFloat == 15) {
                     System.out.println("is divisible without remainder by 2 and larger than 10 or if value " +
-                            "               equals 15");
+                            "           equals 15");
                 }
             }
         }
